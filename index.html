@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- サイト全体のパララックス背景装飾 -->
+    <div class="parallax-bg-container">
+        <div class="parallax-shape shape-1" data-speed="0.3"></div>
+        <div class="parallax-shape shape-2" data-speed="-0.2"></div>
+        <div class="parallax-shape shape-3" data-speed="0.4"></div>
+        <div class="parallax-shape shape-4" data-speed="-0.15"></div>
+        <div class="parallax-shape shape-5" data-speed="0.25"></div>
+    </div>
+
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">My Portfolio</a></h1>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menu-btn"><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero fade-in">
+            <div class="container">
+                <div data-speed="0.15">
+                    <h2 class="hero-title">Creative Design <br>& Development</h2>
+                </div>
+                <div data-speed="0.08">
+                    <p class="hero-subtitle">洗練されたデザインと確かな技術で、想いをカタチにします。</p>
+                </div>
+                <div data-speed="0.04">
+                    <a href="#works" class="btn btn-primary mt-4">View My Works</a>
+                </div>
+            </div>
+            <div class="hero-bg" data-speed="-0.1"></div>
+        </section>
+
+        <section id="works" class="container section">
+            <h3 class="section-title">Featured Works</h3>
+            <div class="filter-menu">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            <div class="grid">
+                <div class="card fade-in" data-category="design">
+                    <img src="images/work1.jpg" alt="実績1">
+                    <div class="card-content">
+                        <h4>Web Design Project 01</h4>
+                        <p>コーポレートサイトのリニューアル</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card fade-in" data-category="development">
+                    <img src="images/work2.jpg" alt="実績2">
+                    <div class="card-content">
+                        <h4>App Development 02</h4>
+                        <p>iOS/AndroidアプリのUI設計</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card fade-in" data-category="branding">
+                    <img src="images/work3.jpg" alt="実績3">
+                    <div class="card-content">
+                        <h4>Branding 03</h4>
+                        <p>新規サービスのロゴ・CI制作</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center mt-4">
+                <a href="works.html" class="btn-outline">View All Works</a>
+            </div>
+        </section>
+
+        <section id="about" class="container section">
+            <h3 class="section-title">About Me</h3>
+            <div class="bento-about-grid fade-in">
+                <!-- プロフィール画像とステータス -->
+                <div class="card bento-profile">
+                    <img src="images/about.jpg" alt="Profile Image">
+                    <div class="bento-badge">
+                        <span class="status-dot"></span> Available for Work
+                    </div>
+                </div>
+                
+                <!-- メインの自己紹介 -->
+                <div class="card bento-intro">
+                    <h4>Hello, I'm a UI/UX Designer & Developer</h4>
+                    <p>最新のテクノロジーとデザインを掛け合わせ、ユーザーの心を動かす体験を創り出します。没入感のあるUIや、マイクロインタラクションを用いた心地よい操作感の追求を得意としています。</p>
+                    <div class="mt-4">
+                        <a href="about.html" class="btn">More About Me</a>
+                    </div>
+                </div>
+                
+                <!-- スキルセット -->
+                <div class="card bento-skills">
+                    <h5>Tech Stack</h5>
+                    <div class="skill-tags">
+                        <span>UI/UX</span><span>Figma</span><span>React</span><span>Three.js</span><span>Animation</span>
+                    </div>
+                </div>
+                
+                <!-- 実績や数字 -->
+                <div class="card bento-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Years of Exp.</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">50+</span>
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container section">
+            <h3 class="section-title">Get In Touch</h3>
+            <div class="contact-grid card fade-in">
+                <div class="contact-text">
+                    <h4>Let's build something amazing together.</h4>
+                    <p>プロジェクトのご相談、お見積もり、その他ご質問など、お気軽にお問い合わせください。3営業日以内に返信いたします。</p>
+                </div>
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="こちらにメッセージをご記入ください..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

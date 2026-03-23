@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">My Portfolio</a></h1>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menu-btn"><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section fade-in">
+            <div class="project-header">
+                <h2 class="project-title">About Me</h2>
+                <p class="project-subtitle">私のこれまでの歩みと、提供できるスキルセットをご紹介します。</p>
+            </div>
+
+            <div class="bento-about-grid">
+                <div class="card bento-profile">
+                    <img src="images/about.jpg" alt="Profile Image">
+                </div>
+                <div class="card bento-intro">
+                    <h4>UI/UX Designer & Front-end Developer</h4>
+                    <p>デザインとエンジニアリングの境界を越え、ユーザーにとって本当に価値のある体験を創り出すことを目標としています。<br>
+                    常に新しい技術やトレンドをキャッチアップし、プロジェクトに最適な解決策を提案します。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h3 class="section-title">Experience</h3>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <span class="timeline-date">2023 - Present</span>
+                    <div class="timeline-content card">
+                        <h4>Senior UI/UX Designer</h4>
+                        <p>Creative Digital Agency Inc.</p>
+                        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.95rem;">大規模なWebアプリケーションのUIデザインおよびデザインシステムの構築を主導。フロントエンドチームと連携し、実装まで見据えた設計を行う。</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <span class="timeline-date">2020 - 2023</span>
+                    <div class="timeline-content card">
+                        <h4>Front-end Developer</h4>
+                        <p>Tech Solutions Ltd.</p>
+                        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.95rem;">Reactを用いたSPA開発に従事。パフォーマンスチューニングやアクセシビリティ改善を担当し、ユーザー体験の向上に貢献。</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <span class="timeline-date">2018 - 2020</span>
+                    <div class="timeline-content card">
+                        <h4>Web Designer</h4>
+                        <p>Design Studio Tokyo</p>
+                        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.95rem;">コーポレートサイトやランディングページのWebデザインおよびHTML/CSSコーディングを担当。レスポンシブデザインの基礎を築く。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h3 class="section-title">Skills</h3>
+            <div class="skills-grid fade-in">
+                <div class="card skills-card">
+                    <div class="skill-category">
+                        <h4>Design</h4>
+                        <div class="skill-item"><div class="skill-info"><span>UI/UX Design</span><span>95%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Figma / Sketch</span><span>90%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Interaction Design</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Branding</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></div>
+                    </div>
+                </div>
+                <div class="card skills-card">
+                    <div class="skill-category">
+                        <h4>Development</h4>
+                        <div class="skill-item"><div class="skill-info"><span>HTML / CSS / Sass</span><span>95%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>JavaScript / TypeScript</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>React / Next.js</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div></div>
+                        <div class="skill-item"><div class="skill-info"><span>Three.js / WebGL</span><span>60%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

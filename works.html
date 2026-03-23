@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Works</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">My Portfolio</a></h1>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html" class="active">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menu-btn"><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="works" class="container section">
+            <h3 class="section-title">All Works</h3>
+            <div class="filter-menu">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            <div class="grid">
+                <!-- カードを複製して数を増やします -->
+                <div class="card fade-in" data-category="design">
+                    <img src="images/work1.jpg" alt="実績1">
+                    <div class="card-content">
+                        <h4>Web Design Project 01</h4>
+                        <p>コーポレートサイトのリニューアル</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card fade-in" data-category="development">
+                    <img src="images/work2.jpg" alt="実績2">
+                    <div class="card-content">
+                        <h4>App Development 02</h4>
+                        <p>iOS/AndroidアプリのUI設計</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card fade-in" data-category="branding">
+                    <img src="images/work3.jpg" alt="実績3">
+                    <div class="card-content">
+                        <h4>Branding 03</h4>
+                        <p>新規サービスのロゴ・CI制作</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card fade-in" data-category="development">
+                    <img src="images/work1.jpg" alt="実績4">
+                    <div class="card-content">
+                        <h4>Web App 04</h4>
+                        <p>Reactを用いたSPA開発</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card fade-in" data-category="design">
+                    <img src="images/work2.jpg" alt="実績5">
+                    <div class="card-content">
+                        <h4>UI Kit 05</h4>
+                        <p>Figmaデザインシステムの構築</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

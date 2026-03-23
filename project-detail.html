@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Project Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">My Portfolio</a></h1>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html" class="active">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menu-btn"><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section fade-in">
+            <div class="project-header">
+                <span class="project-category">Web Design</span>
+                <h2 class="project-title">Web Design Project 01</h2>
+                <p class="project-subtitle">コーポレートサイトのフルリニューアルで、ブランドイメージを刷新し、コンバージョン率を向上させたプロジェクトです。</p>
+            </div>
+            
+            <div class="project-hero-img">
+                <img src="images/work1.jpg" alt="Project Hero Image">
+            </div>
+
+            <div class="project-content-grid">
+                <div class="project-sidebar card">
+                    <div class="project-info-block">
+                        <h4>Client</h4>
+                        <p>株式会社テックデザイン 様</p>
+                    </div>
+                    <div class="project-info-block">
+                        <h4>Role</h4>
+                        <p>UI/UX Design, Front-end Development</p>
+                    </div>
+                    <div class="project-info-block">
+                        <h4>Tech Stack</h4>
+                        <div class="skill-tags">
+                            <span>Figma</span><span>HTML/CSS</span><span>JavaScript</span><span>WordPress</span>
+                        </div>
+                    </div>
+                    <div class="project-info-block">
+                        <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Visit Website</a>
+                    </div>
+                </div>
+
+                <div class="project-main-content card">
+                    <h3>Overview</h3>
+                    <p>既存のコーポレートサイトはデザインが古く、スマートフォンにも最適化されていなかったため、ユーザーの離脱率が高いという課題がありました。本プロジェクトでは、ターゲット層の再定義から始め、モダンで信頼感のあるデザインへと一新しました。</p>
+                    
+                    <h3>Challenges & Solutions</h3>
+                    <p>複雑だったナビゲーション構造を見直し、ユーザーが求める情報に最短でアクセスできるよう、情報設計（IA）を大幅に改善しました。また、メインビジュアルにはマイクロインタラクションを取り入れ、印象に残るファーストビューを実現しています。</p>
+                    <img src="images/work2.jpg" alt="Detail Image" class="content-inline-img">
+                    <p>結果として、リニューアル後3ヶ月でサイトからの問い合わせ数が150%に増加し、直帰率も大幅に改善されました。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

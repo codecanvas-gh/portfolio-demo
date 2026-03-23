@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo"><a href="index.html">My Portfolio</a></h1>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" id="menu-btn"><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container section fade-in">
+            <div class="project-header">
+                <h2 class="project-title">Get In Touch</h2>
+                <p class="project-subtitle">プロジェクトのご相談、お見積もり、その他ご質問など、お気軽にお問い合わせください。</p>
+            </div>
+
+            <div class="contact-grid card">
+                <div class="contact-text">
+                    <h4>Let's build something amazing together.</h4>
+                    <p>右記のフォームよりメッセージをご送信ください。通常、3営業日以内にご返信いたします。</p>
+                    
+                    <div style="margin-top: 40px;">
+                        <p style="font-weight: 700; margin-bottom: 5px; font-size: 0.9rem; color: var(--text-muted);">Email</p>
+                        <p style="font-size: 1.1rem; font-weight: 700; margin-bottom: 20px;">hello@example.com</p>
+                        
+                        <p style="font-weight: 700; margin-bottom: 5px; font-size: 0.9rem; color: var(--text-muted);">Social Links</p>
+                        <p style="font-weight: 700;">
+                            <a href="#" style="color: var(--main-color); margin-right: 15px; text-decoration: underline;">Twitter(X)</a>
+                            <a href="#" style="color: var(--main-color); margin-right: 15px; text-decoration: underline;">LinkedIn</a>
+                            <a href="#" style="color: var(--main-color); text-decoration: underline;">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="こちらにメッセージをご記入ください..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
